@@ -55,7 +55,7 @@ public class ReferencesClientTests : IDisposable
         Assert.NotEmpty(list);
     }
 
-    [IntegrationTest(Skip = "See https://github.com/octokit/octokit.net/issues/242 for making this test pass")]
+    [IntegrationTest(Skip = "See https://github.com/octokit/octokit.net/issues/242 and https://github.com/octokit/octokit.net/issues/238 for the relevant issues we need to address")]
     public async Task CanGetErrorForInvalidNamespace()
     {
         await AssertEx.Throws<Exception>(
